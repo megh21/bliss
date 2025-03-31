@@ -69,11 +69,15 @@ async def generate_solution(
             user_query="",
         )
         # Step 1: Find relevant PDF
-        updated_problem_text = f"{problem_text} the image description is as below {image_description}"
+        updated_problem_text = (
+            f"{problem_text} the image description is as below {image_description}"
+        )
         pdf_url = vector_store.query(text_query=updated_problem_text)
 
         # Step 2: Generate solution steps
-        solution_steps = get_problem_solution(image_description=image_description, pdf_url=pdf_url[0])
+        solution_steps = get_problem_solution(
+            image_description=image_description, pdf_url=pdf_url[0]
+        )
         if not solution_steps:
             raise HTTPException(
                 status_code=500, detail="Failed to generate solution steps"

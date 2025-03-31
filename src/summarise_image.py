@@ -1,5 +1,6 @@
 from google import genai
 from google.genai import types
+
 # from google.cloud import documentai_v1beta3 as documentai
 import base64
 
