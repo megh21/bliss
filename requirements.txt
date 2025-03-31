@@ -1,0 +1,10 @@
+fastapi
+pydantic
+uvicorn
+httpx
+python-multipart
+faiss-cpu
+langchain
+langchain-google-vertexai
+google-genai
+pillow

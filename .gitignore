@@ -1,0 +1,15 @@
+/__pycache__/
+/google-cloud-sdk/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info
+*.egg
+*.whl
+*.log
+*.sqlite3
+/pdfs/
+*.tar.gz
+*.faiss
+*.pkl
